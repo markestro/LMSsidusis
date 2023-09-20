@@ -34,6 +34,7 @@ $parameters = array(
     'help' => 'h',
     'version' => 'v',
     'export-ranges' => 'e',
+    'replace-ranges' => 'r',
     'debug' => 'd',
 );
 
@@ -88,6 +89,7 @@ lms-sidusis.php
 -q, --quiet                     suppress any output, except errors;
 -d, --debug                     print all possible output;
 -e, --export-ranges		export sidusis ranges to internet.gov.pl;
+-r, --replace-ranges		replace all ranges in internet.gov.pl instead sending incremental report;
 EOF;
     exit(0);
 }
@@ -343,7 +345,7 @@ if (array_key_exists('export-ranges', $options)) {
     }
 
     $requestData = array(
-        'is_incremental' => true,
+        'is_incremental' => array_key_exists('replace-ranges', $options) ? false : true,
 	'file' => curl_file_create(
 		$sidusisTemporaryFilepath,
 		'application/zip',
