@@ -89,7 +89,7 @@ lms-sidusis.php
 -q, --quiet                     suppress any output, except errors;
 -d, --debug                     print all possible output;
 -e, --export-ranges		export sidusis ranges to internet.gov.pl;
--r, --replace-ranges		replace all ranges in internet.gov.pl instead sending incremental report;
+-r, --replace-ranges		replace all ranges in internet.gov.pl instead of sending incremental report;
 EOF;
     exit(0);
 }
