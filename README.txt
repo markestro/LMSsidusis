@@ -2,7 +2,7 @@ Skrypt automatyzujący eksport raportów zasięgów z LMS do SIDUSIS.
 
 Instalacja:
 1. Pobierz plik lms-sidusis.php do katalogu bin/
-np. wget https://raw.githubusercontent.com/interduo/LMSsidusisAPI/main/lms-sidusis.php -O /var/www/html/lms/bin/lms-sidusis.php
+np. wget https://raw.githubusercontent.com/interduo/LMSsidusis/main/lms-sidusis.php -O /var/www/html/lms/bin/lms-sidusis.php
 
 2. W LMS ustaw zmienne:
 'sidusis.api_token' - token wygenerowany na stronie internet.gov.pl po zalogowaniu w Profilu,
