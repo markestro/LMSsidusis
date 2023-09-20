@@ -8,6 +8,7 @@ np. wget https://raw.githubusercontent.com/interduo/LMSsidusis/main/lms-sidusis.
 'sidusis.api_token' - token REST API wygenerowany na stronie internet.gov.pl - po zalogowaniu w edycji Profilu użytkownika,
 'sidusis.selected_division' - raportowany oddział,
 'sidusis_operator_offer_url' - adres URL z ofertą usług,
+(gdyby ktoś wrzucał raporty z wielu oddziałów można użyć zmiennej --config i deklarować te zmienne w różnych plikach)
 
 3. Uruchom pierwszy import i sprawdź poprawność danych w internet.gov.pl
 bin/lms-sidusis.php --export-ranges --debug
