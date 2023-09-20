@@ -12,8 +12,8 @@ np. wget https://raw.githubusercontent.com/interduo/LMSsidusis/main/lms-sidusis.
 3. Uruchom pierwszy import i sprawdź poprawność danych w internet.gov.pl
 bin/lms-sidusis.php --export-ranges --debug
 
-4. Dodaj do systemowego harmonogramu zadań (crontab) komendę
-bin/lms-sidusis.php --export-ranges -q
+4. Dodaj do systemowego harmonogramu zadań (crontab) komendę wrzucającą raport z typem przyrostowym
+0 15	* * 1	root	/var/www/html/lms/bin/lms-sidusis.php -q --export-ranges
 
 Pozdrawiam i miłej kawusi
 Jarosław 'YArii' Kłopotek 
